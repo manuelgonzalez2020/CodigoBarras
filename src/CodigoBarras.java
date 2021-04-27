@@ -1,15 +1,14 @@
 import java.util.Scanner;
 public class CodigoBarras {
-	private static Scanner leer;
 	public CodigoBarras() {
 		// TODO Auto-generated constructor stub
 	}
 	public static void main(String[] args) {
-		leer = new Scanner(System.in);
-		System.out.println("Introduzca el código de barras");
+		Scanner leer = new Scanner(System.in);
+		System.out.println("Introduzca el cÃ³digo de barras");
 		String codBarras=leer.next();
-		if(comprobarCodigoBarras(codBarras)) System.out.println("Código de Barras Correcto");
-		else System.err.println("Código de Barras Incorrecto");
+		if(comprobarCodigoBarras(codBarras)) System.out.println("CÃ³digo de Barras Correcto");
+		else System.err.println("CÃ³digo de Barras Incorrecto");
 	}
 	public static boolean comprobarCodigoBarras(String codBarras) {
 		int suma=Integer.parseInt(codBarras.substring(0,1));
