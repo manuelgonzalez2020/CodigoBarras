@@ -1,11 +1,10 @@
 import java.util.Scanner;
 public class CodigoBarras {
-	private static Scanner leer;
 	public CodigoBarras() {
 		// TODO Auto-generated constructor stub
 	}
 	public static void main(String[] args) {
-		leer = new Scanner(System.in);
+		Scanner leer = new Scanner(System.in);
 		System.out.println("Introduzca el código de barras");
 		String codBarras=leer.next();
 		if(comprobarCodigoBarras(codBarras)) System.out.println("Código de Barras Correcto");
